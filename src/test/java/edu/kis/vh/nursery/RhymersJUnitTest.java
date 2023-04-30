@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+import edu.kis.vh.nursery.defaultCountingOutRhymer;
 public class RhymersJUnitTest {
 
     public static final int TEST_VALUE = 4;
@@ -17,6 +17,16 @@ public class RhymersJUnitTest {
 
         int result = rhymer.peekaboo();
         Assert.assertEquals(TEST_VALUE, result);
+    }
+
+    @Test
+    public void testdefaultCountingOutRhymer () {
+        defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
+        Assert.assertEquals(false,rhymer.isFull());
+        for (int i = 0 ; i < 100 ; i++) {
+            rhymer.countIn(i);
+        }
+        Assert.assertEquals(true,rhymer.isFull());
     }
 
     @Test
