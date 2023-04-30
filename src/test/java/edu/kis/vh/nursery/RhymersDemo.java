@@ -38,5 +38,5 @@ class RhymersDemo {
         System.out.println("total rejected is "
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
     }
-
+//przechodzi testy
 }
