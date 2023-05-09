@@ -3,6 +3,7 @@ package edu.kis.vh.nursery.factory;
 import edu.kis.vh.nursery.defaultCountingOutRhymer;
 import edu.kis.vh.nursery.FIFORhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
+//TODO: mozliwe usuniecie importa
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 public class DefaultRhymersFactory implements Rhymersfactory {
